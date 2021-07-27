@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
-    lateinit var rvContact: RecyclerView
+    lateinit var rvContacts: RecyclerView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -21,9 +21,9 @@ class MainActivity : AppCompatActivity() {
             Contact("Gladwell mwema","gladwell@gmail.com","0987654321","https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fHBlb3BsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60")
 
         )
-        rvContact=findViewById(R.id.rvContacts)
+        rvContacts=findViewById(R.id.rvContacts)
         var studentAdapter=contactRvAdapter(contact_list,baseContext)
-        rvContact.layoutManager=LinearLayoutManager(baseContext)
-        rvContact.adapter=studentAdapter
+        rvContacts.layoutManager=LinearLayoutManager(baseContext)
+        rvContacts.adapter=studentAdapter
 
     }}

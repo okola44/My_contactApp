@@ -32,7 +32,7 @@ class contactRvAdapter(var contactList: List<Contact>,var context: Context):Recy
             intent.putExtra("name",currentStudent.name)
             intent.putExtra("email",currentStudent.email)
             intent.putExtra("phone",currentStudent.phone)
-            intent.putExtra("image",currentStudent.imageUrl)
+            intent.putExtra("imageUrl",currentStudent.imageUrl)
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             context.startActivity(intent)
 
